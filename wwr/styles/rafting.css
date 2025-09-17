@@ -1,0 +1,67 @@
+/* Color palettes */
+:root {
+    --primary-color: #4F000B;
+    --secondary-color: #CE4257;
+    --third-color: #FF7F51;
+    --fourth-color: #FF7F51;
+    --fifth-color: #FF9B54;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Amatic SC", sans-serif ;
+    color: var(--third-color);
+}
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+h1, h2 {
+    font-weight: 700;
+    color: var(--third-color);
+}
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+h1 {
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #26262689;
+    color: var(--third-color);
+}
+article{
+    position: absolute;
+    bottom: 0;
+    background-color: #26262689;
+}
+article p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: Roboto;
+}
+.hero {
+    position: relative;
+}
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+}
+.hero article img{
+    float: right;
+    width: 80px;
+}
+.socialmedia a {
+    text-decoration: none;
+}
