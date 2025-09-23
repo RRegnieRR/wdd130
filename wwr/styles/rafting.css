@@ -16,8 +16,35 @@ body {
     color: var(--third-color);
 }
 header, main, footer {
-    width: 840px;
+    width: 900px;
     margin: 0 auto;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem 0;
+    background-color: var(--primary-color);
+}
+.header img{
+    align-self: center;
+    justify-self: center;
+}
+nav{
+    display:inline-block;
+    align-self: center;
+}
+.header ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+.header li{
+    list-style-type: none;
+}
+.header a{
+    text-decoration: none;
+    color: var(--fifth-color);
 }
 h1, h2 {
     font-weight: 700;
@@ -63,4 +90,47 @@ article p {
 }
 .socialmedia a {
     text-decoration: none;
+}
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.history img{
+    margin: 10px;
+    width: 80%;
+    justify-self: center;
+    align-self: center;
+}
+.history_title{
+    justify-self: center;
+}
+.pre-footer h2{
+    justify-self: center;
+}
+.pre-footer-imgs{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+}
+.pre-footer figure{
+    width: 150px;
+}
+figure img{
+    width: 150px;
+}
+footer{
+    display: flex;
+    position: relative;
+    background-color: var(--primary-color);
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+footer img{
+    width: 30px;
+    margin: 0 5px;
+}
+footer nav{
+    position: absolute;
+    right: 10px;
 }
