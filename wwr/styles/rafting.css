@@ -54,7 +54,7 @@ nav, p, section, article {
     margin: 16px;
     padding: 8px;
 }
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     right: -5px;
@@ -133,4 +133,67 @@ footer img{
 footer nav{
     position: absolute;
     right: 10px;
+}
+                            /* Section for contact Page */
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-info h1{
+    padding: .5rem;
+}
+.contact-info h3{
+    padding: .1rem;
+}
+.form-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+.form-section iframe{
+    width: 400px;
+    height: 400px;
+}
+.form-item {
+  display: grid;
+  align-items: center;
+  margin: 20px 0;
+}
+.column1 {
+  grid-template-columns: 1fr 2fr;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+.column2 p{
+    justify-self: left;
+    margin: 0;
+    padding: 0;
+}
+.column3{
+    display: flex;
+    justify-self: left;
+}
+.column3 input{
+    width: 20px;
+}
+.message-title{
+    display: block;
+}
+textarea{
+    resize: none;
+    display: block;
+    width: 450px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+button{
+    display: block;
+    margin-top: 15px;
+    height: 25px;
+    width: 450px;
 }
