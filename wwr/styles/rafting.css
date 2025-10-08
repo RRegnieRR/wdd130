@@ -269,8 +269,12 @@ button{
 .content_cta button:hover{
     cursor: pointer;
 }
-.testimony_section p{
-    width: auto;
+.pre-footer p {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    display: inline-block;
+    width: 150px;
 }
                      /* --------   Trip Section   -------- */
 .rafting-container {
