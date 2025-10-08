@@ -5,6 +5,7 @@
     --third-color: #FF7F51;
     --fourth-color: #FF7F51;
     --fifth-color: #FF9B54;
+    --sixth-color: rgb(254, 255, 244);
 }
 *{
     margin: 0;
@@ -174,6 +175,11 @@ footer nav{
 .column1 {
   grid-template-columns: 1fr 2fr;
 }
+.column1 input {
+    height: 35px;
+    background-color: rgb(242, 243, 232);
+    border: none;
+}
 .column2 {
     grid-template-columns: 1fr 2fr;
 }
@@ -198,6 +204,8 @@ textarea{
     width: 450px;
     height: 50px;
     margin-bottom: 20px;
+    background-color: rgb(242, 243, 232);
+    border: none;
 }
 button{
     display: block;
@@ -205,18 +213,26 @@ button{
     height: 25px;
     width: 450px;
 }
+.info-form button{
+    height: 35px;
+    background-color: #005c5a;
+    color: rgb(254, 255, 244);
+    border: none;
+}
 .newsletter_section{
     margin: 60px 0;
 }
 .newsletter_section input{
     height: 30px;
+    background-color: rgb(242, 243, 232);
 }
 .newsletter_section button{
     width: 900px;
     height: 40px;
     background-color: #005c5a;
-    color: #FF9B54;
+    color: var(--sixth-color);
     font-size: 20px;
+    border: none;
 }
 .newsletter_section button:hover{
     cursor: pointer;
@@ -257,4 +273,92 @@ button{
     margin: 0;
     padding: 0;
     color: var(--primary-color);
+}
+                     /* --------   Trip Section   -------- */
+.rafting-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 40px 0;
+}
+
+.rafting-card {
+  background-color: rgb(227, 228, 216);
+  padding: 15px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.rafting-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rafting-card h3 {
+  margin: 12px 0;
+  color: var(--fifth-color);
+  font-size: 1.1em;
+}
+
+.rafting-card p {
+  font-size: 0.9em;
+  color: #272727;
+  margin: 6px 0;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  margin-right: 5px;
+}
+
+.new-price {
+  color: var(--fifth-color);
+  font-weight: bold;
+}
+
+.rafting-container button {
+  background-color: #005c5a;
+  border: none;
+  color: var(--sixth-color);
+  font-weight: bold;
+  width: auto;
+  height: 35px;
+}
+
+.rafting-container button:hover {
+  cursor: pointer;
+}
+.rafting-table {
+  width: 100%;
+  margin: 30px auto;
+  max-width: 900px;
+  background-color: rgb(227, 228, 216);
+  color: #272727;
+  font-family: system-ui, sans-serif;
+}
+.trips_table_title{
+    justify-self: center;
+    align-self: center;
+}
+.rafting-table th,
+.rafting-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.rafting-table th {
+  background-color: rgb(203, 204, 190);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.rafting-table tr:hover {
+  background-color: rgba(77, 163, 255, 0.1);
+  transition: background 0.2s ease;
 }
