@@ -269,10 +269,8 @@ button{
 .content_cta button:hover{
     cursor: pointer;
 }
-.pre-footer p {
-    margin: 0;
-    padding: 0;
-    color: var(--primary-color);
+.testimony_section p{
+    width: auto;
 }
                      /* --------   Trip Section   -------- */
 .rafting-container {
